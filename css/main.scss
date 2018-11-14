@@ -10,3 +10,9 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
+
+.rw-box {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 1rem;
+}

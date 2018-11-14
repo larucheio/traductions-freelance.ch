@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     </style>
   </head>
-  <body>
+  <body class="bg-light">
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-success">
       <div class="container">
@@ -23,6 +23,16 @@
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item {% if page.url == '/' %}active{% endif %}">
               <a class="nav-link" href="/">Bienvenue</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/#service-traduction">Traduction</a>
+                <a class="dropdown-item" href="/#service-redaction">Rédaction</a>
+                <a class="dropdown-item" href="/#service-relecture">Relecture</a>
+              </div>
             </li>
             <li class="nav-item {% if page.url == '/qui-suis-je/' %}active{% endif %}">
               <a class="nav-link" href="/qui-suis-je/">Qui suis-je?</a>
